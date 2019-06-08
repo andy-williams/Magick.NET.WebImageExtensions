@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.28307.106
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Magick.NET.WebImageExtensions", "Magick.NET.WebImageExtensions\Magick.NET.WebImageExtensions.csproj", "{0520AD46-B870-400D-94FD-4F236A738D92}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{1B2171E7-B1C8-46A7-BDD8-5B47435550CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Magick.NET.WebImageExtensions.Integration.Tests", "tests\Magick.NET.WebImageExtensions.Integration.Tests\Magick.NET.WebImageExtensions.Integration.Tests.csproj", "{0E96A605-C957-4857-A0A2-66F61EFF76BB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +19,16 @@ Global
 		{0520AD46-B870-400D-94FD-4F236A738D92}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0520AD46-B870-400D-94FD-4F236A738D92}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0520AD46-B870-400D-94FD-4F236A738D92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E96A605-C957-4857-A0A2-66F61EFF76BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E96A605-C957-4857-A0A2-66F61EFF76BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E96A605-C957-4857-A0A2-66F61EFF76BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E96A605-C957-4857-A0A2-66F61EFF76BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0E96A605-C957-4857-A0A2-66F61EFF76BB} = {1B2171E7-B1C8-46A7-BDD8-5B47435550CE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C511DDB1-DE93-4BE0-8E6F-A671F4124876}

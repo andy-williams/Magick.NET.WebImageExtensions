@@ -2,7 +2,5 @@
 
 namespace Magick.NET.WebImageExtensions
 {
-    public class Class1
-    {
-    }
+    public class UnknownCropTypeException : Exception { }
 }
