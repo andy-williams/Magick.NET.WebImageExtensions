@@ -20,6 +20,7 @@ Example input
 using(var image = new MagickImage("/path/to/image.jpg"))
 {
     image.ScaleAndCrop(new Box(width, height), CropType.Center);
+    image.Write("/path/to/output.jpg");
 }
 ```
 
