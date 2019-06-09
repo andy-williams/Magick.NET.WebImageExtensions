@@ -22,6 +22,13 @@ namespace Magick.NET.WebImageExtensions.Integration.Tests
         [InlineData(CropType.Center, 5000, 1200, "alpine-lake_5000x1200.jpg")]
         [InlineData(CropType.Center, 400, 1200, "alpine-lake_400x1200.jpg")]
         [InlineData(CropType.Center, 1200, 5000, "alpine-lake_1200x5000.jpg")]
+
+        [InlineData(CropType.TopLeft, 960, 640, "alpine-lake_topleft_960x640.jpg")]
+        [InlineData(CropType.TopLeft, 250, 250, "alpine-lake_topleft_250x250.jpg")]
+        [InlineData(CropType.TopLeft, 1000, 20, "alpine-lake_topleft_1000x20.jpg")]
+        [InlineData(CropType.TopLeft, 5000, 1200, "alpine-lake_topleft_5000x1200.jpg")]
+        [InlineData(CropType.TopLeft, 400, 1200, "alpine-lake_topleft_400x1200.jpg")]
+        [InlineData(CropType.TopLeft, 1200, 5000, "alpine-lake_topleft_1200x5000.jpg")]
         public void Should_CropAndScale(CropType cropType, int width, int height, string expectedOutput)
         {
             using (var image = new MagickImage(Path.Join(_testFileDir, "alpine-lake_1920.jpg")))
