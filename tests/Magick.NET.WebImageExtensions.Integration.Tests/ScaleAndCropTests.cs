@@ -27,9 +27,13 @@ namespace Magick.NET.WebImageExtensions.Integration.Tests
             using (var image = new MagickImage(Path.Join(_testFileDir, "alpine-lake_1920.jpg")))
             {
                 image.ScaleAndCrop(new Box(width, height), cropType);
+
                 var actualBytes = image.ToByteArray();
 
                 var expectedOutputPath = Path.Join(_testFileDir, $"expected-output\\{expectedOutput}");
+
+                Assert.Equal(width, image.Width);
+                Assert.Equal(height, image.Height);
 
                 if (!File.Exists(expectedOutputPath))
                 {
