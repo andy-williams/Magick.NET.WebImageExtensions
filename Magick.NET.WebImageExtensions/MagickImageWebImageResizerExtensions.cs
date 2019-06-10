@@ -56,6 +56,14 @@ namespace Magick.NET.WebImageExtensions
                     Y = (imageToOutputHeightDiff) / 2 - (imageToOutputHeightDiff) / 2 / 2
                 });
             }
+            else if (cropType == CropType.TopLeft)
+            {
+                image.Crop(new MagickGeometry(box.Width, box.Height)
+                {
+                    X = 0,
+                    Y = 0
+                });
+            }
             else
             {
                 throw new UnknownCropTypeException();
@@ -64,3 +72,4 @@ namespace Magick.NET.WebImageExtensions
         }
     }
 }
+
