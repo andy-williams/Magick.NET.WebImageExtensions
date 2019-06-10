@@ -64,6 +64,59 @@ namespace Magick.NET.WebImageExtensions
                     Y = 0
                 });
             }
+            else if (cropType == CropType.TopRight)
+            {
+                var imageToOutputWidthDiff = image.Width - box.Width;
+
+                image.Crop(new MagickGeometry(box.Width, box.Height)
+                {
+                    X = imageToOutputWidthDiff,
+                    Y = 0
+                });
+            }
+            else if (cropType == CropType.BottomLeft)
+            {
+                var imageToOutputHeightDiff = image.Height - box.Height;
+
+                image.Crop(new MagickGeometry(box.Width, box.Height)
+                {
+                    X = 0,
+                    Y = imageToOutputHeightDiff
+                });
+            }
+            else if (cropType == CropType.BottomRight)
+            {
+                var imageToOutputWidthDiff = image.Width - box.Width;
+                var imageToOutputHeightDiff = image.Height - box.Height;
+
+                image.Crop(new MagickGeometry(box.Width, box.Height)
+                {
+                    X = imageToOutputWidthDiff,
+                    Y = imageToOutputHeightDiff
+                });
+            }
+            else if (cropType == CropType.Left)
+            {
+                var imageToOutputWidthDiff = image.Width - box.Width;
+                var imageToOutputHeightDiff = image.Height - box.Height;
+
+                image.Crop(new MagickGeometry(box.Width, box.Height)
+                {
+                    X = 0,
+                    Y = imageToOutputHeightDiff / 2
+                });
+            }
+            else if (cropType == CropType.Right)
+            {
+                var imageToOutputWidthDiff = image.Width - box.Width;
+                var imageToOutputHeightDiff = image.Height - box.Height;
+
+                image.Crop(new MagickGeometry(box.Width, box.Height)
+                {
+                    X = imageToOutputWidthDiff,
+                    Y = imageToOutputHeightDiff / 2
+                });
+            }
             else
             {
                 throw new UnknownCropTypeException();
