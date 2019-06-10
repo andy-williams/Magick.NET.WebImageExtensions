@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.106
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Magick.NET.WebImageExtensions", "Magick.NET.WebImageExtensions\Magick.NET.WebImageExtensions.csproj", "{0520AD46-B870-400D-94FD-4F236A738D92}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Magick.NET.WebImageExtensions", "Magick.NET.WebImageExtensions\Magick.NET.WebImageExtensions.csproj", "{0520AD46-B870-400D-94FD-4F236A738D92}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{1B2171E7-B1C8-46A7-BDD8-5B47435550CE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Magick.NET.WebImageExtensions.Integration.Tests", "tests\Magick.NET.WebImageExtensions.Integration.Tests\Magick.NET.WebImageExtensions.Integration.Tests.csproj", "{0E96A605-C957-4857-A0A2-66F61EFF76BB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Magick.NET.WebImageExtensions.Acceptance.Tests", "tests\Magick.NET.WebImageExtensions.Acceptance.Tests\Magick.NET.WebImageExtensions.Acceptance.Tests.csproj", "{0E96A605-C957-4857-A0A2-66F61EFF76BB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
