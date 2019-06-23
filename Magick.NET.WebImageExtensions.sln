@@ -15,14 +15,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0520AD46-B870-400D-94FD-4F236A738D92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0520AD46-B870-400D-94FD-4F236A738D92}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0520AD46-B870-400D-94FD-4F236A738D92}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0520AD46-B870-400D-94FD-4F236A738D92}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0E96A605-C957-4857-A0A2-66F61EFF76BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0E96A605-C957-4857-A0A2-66F61EFF76BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0E96A605-C957-4857-A0A2-66F61EFF76BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0E96A605-C957-4857-A0A2-66F61EFF76BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0520AD46-B870-400D-94FD-4F236A738D92}.Debug|Any CPU.ActiveCfg = ReleaseQ16-HDRI|Any CPU
+		{0520AD46-B870-400D-94FD-4F236A738D92}.Debug|Any CPU.Build.0 = ReleaseQ16-HDRI|Any CPU
+		{0520AD46-B870-400D-94FD-4F236A738D92}.Release|Any CPU.ActiveCfg = ReleaseQ16-HDRI|Any CPU
+		{0520AD46-B870-400D-94FD-4F236A738D92}.Release|Any CPU.Build.0 = ReleaseQ16-HDRI|Any CPU
+		{0E96A605-C957-4857-A0A2-66F61EFF76BB}.Debug|Any CPU.ActiveCfg = DebugQ16-HDRI|Any CPU
+		{0E96A605-C957-4857-A0A2-66F61EFF76BB}.Debug|Any CPU.Build.0 = DebugQ16-HDRI|Any CPU
+		{0E96A605-C957-4857-A0A2-66F61EFF76BB}.Release|Any CPU.ActiveCfg = DebugQ16-HDRI|Any CPU
+		{0E96A605-C957-4857-A0A2-66F61EFF76BB}.Release|Any CPU.Build.0 = DebugQ16-HDRI|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
