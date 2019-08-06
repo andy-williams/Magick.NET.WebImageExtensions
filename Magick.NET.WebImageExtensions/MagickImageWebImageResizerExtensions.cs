@@ -26,9 +26,10 @@ namespace Magick.NET.WebImageExtensions
             if (height <= 0)
                 throw new ArgumentException(nameof(height));
 
-            var whRatio = (double)image.Height / image.Width;
-            var width = (int)Math.Ceiling(height / whRatio);
-            image.Scale(new MagickGeometry(width, height));
+            var percentage = height / (double)image.Height;
+            var newWidth = (int)Math.Round(percentage * image.Width);
+            var newHeight = (int)Math.Round(percentage * image.Height);
+            image.Scale(new MagickGeometry(newWidth, newHeight));
             return image;
         }
 
@@ -37,9 +38,10 @@ namespace Magick.NET.WebImageExtensions
             if (width <= 0)
                 throw new ArgumentException(nameof(width));
 
-            var whRatio = (double)image.Width / image.Height;
-            var height = (int)Math.Ceiling(width * whRatio);
-            image.Scale(new MagickGeometry(width, height));
+            var percentage = width / (double)image.Width;
+            var newWidth = (int)Math.Round(percentage * image.Width);
+            var newHeight = (int)Math.Round(percentage * image.Height);
+            image.Scale(new MagickGeometry(newWidth, newHeight));
             return image;
         }
 
